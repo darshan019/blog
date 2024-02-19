@@ -6,6 +6,18 @@
   place-items: center;
 }
 
+.about{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  height: 90vh;
+}
+
 .card {
   width: 400px;
 }

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useTokenUpdate } from "./Token";
+import { useNavigate } from "react-router-dom";
 
 const Login: React.FC = () => {
+  const navigate = useNavigate();
   interface Data {
     username: string;
     password: string;
@@ -42,6 +44,7 @@ const Login: React.FC = () => {
       .then((data) => {
         setToken(data.accessToken);
       });
+    navigate("/");
   }
 
   return (
