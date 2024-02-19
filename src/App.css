@@ -1,0 +1,31 @@
+.data{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  place-items: center;
+}
+
+.card {
+  width: 400px;
+}
+
+@media (max-width: 915px) {
+  .data{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f 1fr;
+  }
+  .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 580px) {
+  .data{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .card {
+    width: 250px;
+  }
+}
