@@ -9,14 +9,14 @@ import About from "./About";
 const Router = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/blog",
       element: <App />,
       children: [
         { index: true, element: <Container /> },
-        { path: "post/:id", element: <ViewPost /> },
-        { path: "login", element: <Login /> },
-        { path: "signup", element: <Signup /> },
-        { path: "about", element: <About /> },
+        { path: "/blog/post/:id", element: <ViewPost /> },
+        { path: "/blog/login", element: <Login /> },
+        { path: "/blog/signup", element: <Signup /> },
+        { path: "/blog/about", element: <About /> },
       ],
     },
   ]);

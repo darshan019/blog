@@ -44,7 +44,7 @@ const Login: React.FC = () => {
       .then((data) => {
         if (setToken != null) setToken(data.accessToken);
       });
-    navigate("/");
+    navigate("/blog/");
   }
 
   return (

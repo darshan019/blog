@@ -6,9 +6,9 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-md border-bottom border-dark">
       <div className="container-xxl">
-        <a href="#" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <h1 className="fw-bold text-secondary">Blog</h1>
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,11 +26,6 @@ const Navbar: React.FC = () => {
           className="collapse navbar-collapse justify-content-end align-center"
         >
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                <p className="fs-4 fw-bold">Home</p>
-              </Link>
-            </li>
             {User ? (
               <li className="nav-item">
                 <Link to="about" className="nav-link">

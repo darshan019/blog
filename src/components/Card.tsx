@@ -14,7 +14,7 @@ const Card: React.FC<Props> = ({ author, title, summary, id }: Props) => {
       <div className="card-body">
         <h5 className="card-title">{author}</h5>
         <p className="card-text">{summary}</p>
-        <Link className="btn btn-primary" to={`/post/${id}`}>
+        <Link className="btn btn-primary" to={`/blog/post/${id}`}>
           View Post
         </Link>
       </div>
