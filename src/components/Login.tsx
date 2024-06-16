@@ -42,7 +42,7 @@ const Login: React.FC = () => {
         return resp.json();
       })
       .then((data) => {
-        setToken(data.accessToken);
+        if (setToken != null) setToken(data.accessToken);
       });
     navigate("/");
   }
