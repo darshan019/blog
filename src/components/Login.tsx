@@ -28,7 +28,7 @@ const Login: React.FC = () => {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    await fetch("http://localhost:3000/log-in", {
+    await fetch("https://blog-api-31o3.onrender.com/log-in", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

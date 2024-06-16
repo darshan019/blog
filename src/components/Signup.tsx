@@ -25,7 +25,7 @@ const Signup: React.FC = () => {
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    fetch("http://localhost:3000/sign-up", {
+    fetch("https://blog-api-31o3.onrender.com/sign-up", {
       method: "POST",
       headers: {
         "Content-type": "Application/json",

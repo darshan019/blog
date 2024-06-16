@@ -36,7 +36,7 @@ const ViewPost: React.FC = () => {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    await fetch(`http://localhost:3000/post/${id}/comment`, {
+    await fetch(`https://blog-api-31o3.onrender.com/post/${id}/comment`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -54,9 +54,9 @@ const ViewPost: React.FC = () => {
   useEffect(() => {
     async function fetchPost() {
       try {
-        const blogPost = await fetch(`http://localhost:3000/post/${id}`).then(
-          (data) => data.json()
-        );
+        const blogPost = await fetch(
+          `https://blog-api-31o3.onrender.com/post/${id}`
+        ).then((data) => data.json());
 
         setPost(blogPost.post);
         setComments(blogPost.comments);

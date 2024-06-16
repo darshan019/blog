@@ -36,7 +36,7 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   useEffect(() => {
     async function fetchUser() {
       if (token) {
-        const response = await fetch("http://localhost:3000/", {
+        const response = await fetch("https://blog-api-31o3.onrender.com/", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

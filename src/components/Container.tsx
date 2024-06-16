@@ -33,8 +33,8 @@ const Container: React.FC = () => {
   useEffect(() => {
     async function fetchPosts() {
       try {
-        const posts = await fetch("http://localhost:3000/").then((data) =>
-          data.json()
+        const posts = await fetch("https://blog-api-31o3.onrender.com/").then(
+          (data) => data.json()
         );
 
         setPosts(posts.posts);
