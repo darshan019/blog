@@ -2,4 +2,4 @@
 
 # Made using React, Bootstrap, NodeJS, ExpressJS
 
-# Live: here[https://darshan019.github.io/blog/]
+# Live: [here](https://darshan019.github.io/blog/)
